@@ -1,0 +1,77 @@
+{
+  "name": "mongoexpress-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for express and mongodb with Typescript, base for all Softworks APIs",
+  "main": "src/api/v1/index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "npx nodemon src/api/v1/index.ts",
+    "build": "npx tsc",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Softworks-Studio/mongoexpress-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "express",
+    "mongodb",
+    "mongoose",
+    "expressmongo",
+    "api",
+    "apiboilerplate"
+  ],
+  "author": "Softworks Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Softworks-Studio/mongoexpress-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Softworks-Studio/mongoexpress-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "compression": "^1.7.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "csrf-csrf": "^3.0.8",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.4.1",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "hpp": "^0.2.3",
+    "mongoose": "^8.8.0",
+    "mongoose-paginate-v2": "^1.8.5",
+    "morgan": "^1.10.0",
+    "node-cache": "^5.1.2",
+    "ts-node": "^10.9.2",
+    "winston": "^3.16.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.5",
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/csurf": "^1.11.5",
+    "@types/express": "^5.0.0",
+    "@types/express-mongo-sanitize": "^2.1.2",
+    "@types/express-rate-limit": "^6.0.2",
+    "@types/express-session": "^1.18.0",
+    "@types/helmet": "^4.0.0",
+    "@types/hpp": "^0.2.6",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.8.6",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^8.12.2",
+    "@typescript-eslint/parser": "^8.12.2",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  }
+}
